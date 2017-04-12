@@ -1,8 +1,13 @@
-<?php namespace Defenestrator\Laravel5\CouchDb;
+<?php
+
+namespace Mss\AdultSwim\Drivers\CouchDB;
+
 use \Doctrine\CouchDB\CouchDBClient;
+
 use \Illuminate\Database\Connection;
 
-class CouchDbConnection extends Connection {
+class CouchDbConnection extends Connection
+{
     /**
      * The CouchDB database handler.
      *

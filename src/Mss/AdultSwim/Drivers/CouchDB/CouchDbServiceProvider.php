@@ -1,7 +1,11 @@
-<?php namespace Defenestrator\Laravel5\Couchdb;
+<?php
+
+namespace Mss\AdultSwim\Drivers\CouchDB;
+
 use \Illuminate\Support\ServiceProvider;
 
-class CouchDbServiceProvider extends ServiceProvider {
+class CouchDbServiceProvider extends ServiceProvider
+{
     /**
      * Register the provider.
      *
