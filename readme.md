@@ -7,12 +7,12 @@ CouchDB database driver for Laravel 5
 
 ## Installation
 
-`composer require defenestrator/laravel5-couchdb`.
+`composer require dydx/laravel5-couchdb`.
 
 Add the service provider in `app/config/app.php`:
 
 ```php
-'Defenestrator\Laravel5\Couchdb\CouchdbServiceProvider',
+Mss\AdultSwim\Drivers\CouchDB::class,
 ```
 
 When using couchdb connections, Laravel will automatically provide you with the corresponding couchdb objects.
@@ -44,7 +44,7 @@ And add a new couchdb connection:
 
 ```php
 /**
- * @var \Defenestrator\Laravel5\Couchdb\CouchdbConnection
+ * @var \Mss\AdultSwim\Drivers\CouchDB\CouchDbConnection
  */
 $connection = DB::connection('couchdb');
 
