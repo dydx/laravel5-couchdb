@@ -2,7 +2,7 @@
 
 namespace Mss\AdultSwim\Drivers\CouchDB;
 
-use \Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class CouchDbServiceProvider extends ServiceProvider
 {
@@ -14,8 +14,7 @@ class CouchDbServiceProvider extends ServiceProvider
     public function register()
     {
         // Add couchdb to the database manager
-        $this->app['db']->extend('couchdb', function($config)
-        {
+        $this->app['db']->extend('couchdb', function ($config) {
             return new CouchdbConnection($config);
         });
     }
